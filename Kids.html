@@ -1,0 +1,936 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-commerce</title>
+    <style>
+
+#left {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#center {
+    text-align: center;
+}
+
+
+#right {
+    float: right;
+    text-align: right;
+    padding-left: 10px;
+}
+
+
+  .buttonc {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(249, 251, 252);
+  border: none;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.buttonc:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 4px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  color: grey;
+}
+
+.button {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+.product-carousel-price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.button1 {
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  text-color: white;
+  
+}
+
+.button1 {
+  background-color: rgba(16, 173, 235, 0.541); 
+  color: black; 
+  border: 2px solid #ffffff;
+}
+
+.button1:hover {
+  background-color: #1ac1c7;
+  color: white;
+}
+.pull-right{
+  float:right;
+}
+
+
+
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 365px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(231, 229, 229);
+  color: rgb(233, 83, 83);
+}
+
+.flip-box-back {
+  background-color: rgb(182, 241, 239);
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+ 
+</head>
+<body bgcolor="#F1F3F6">
+<table  border="0" width="100%" bgcolor="#000000">
+<tr>
+    <td align="right"><img src="logo.png" style="width:120px;height:70px;"></td>
+    <td><input type="text" placeholder="Search for products, brand and more" name="search" style="width:550px;height:35px;">
+        <input type="button" value="Search" style="width: 120px;height: 35px;">
+    </td>
+    <th ><font color="white">Login</font></th>
+    <td><img src="cart.png" style="width:50px;height:40px;"></td>
+</tr>
+</table>
+<table  border="0" width="100%" height="8%" bgcolor="white" >
+  <tr>
+    
+    <th width="12.5%">
+
+        <a href=mobile.html><button class="buttonc"><span>Electronics</span></button></a>
+       
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Appliances.html> <button class="buttonc"><span>Appliances</span></button></a>
+    
+    </th>
+    
+    
+    <th  width="12.5%">
+        <a href=Men.html></p><button class="buttonc"><span>Men</span></button></a>
+    
+     </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Women.html> <button class="buttonc"><span>Women</span></button></a>
+   
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Kids.html> <button class="buttonc"><span>Kids</span></button></a>
+   
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=> <button class="buttonc"><span>Home and Furniture</span></button></a>
+           
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=> <button class="buttonc"><span>Books</span></button></a>
+            
+    </th>
+    
+    
+            <th width="12.5%">
+                <a href=><button class="buttonc"><span>Health</span></button></a>
+            
+    </th>
+        </tr>
+</table>
+    
+<img src="kidsban2.png" style="width:100%">
+<!-----------start of toys row 1-->
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Toys</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="stuffed toy 3 Feet Cute Blue Fur & Heart Teddy Bear - 92 cm  (sky blue).jpeg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Color : </td><td>Blue</td>
+        </tr> 
+        <tr>
+         <td>Washable :</td><td>Yes</td>
+        </tr> 
+        <tr>
+         <td>Ideal For : </td><td>Boys & Girls</td>
+        </tr> 
+        <tr>
+         <td>Sound Features :</td><td>No</td>
+           </tr> 
+           
+          
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>stuffed toy 3 Feet Cute Blue Fur & Heart Teddy Bear - 92 cm  (sky blue)</p>
+            <div class="product-carousel-price">
+            <ins>₹13,490</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="MeeMee Unbreakable Automobile Car Toy Set.jpeg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Type : </td><td>Tanks, Trucks & Big Vehicles</td>
+               </tr> 
+            </tr> 
+            <tr>
+             <td>Ideal for :</td><td>Boys</td>
+            </tr> 
+            <tr>
+             <td>Minimum Age : </td><td>2 years</td>
+            </tr> 
+            <tr>
+             <td>Material :</td><td>ABS Plastic</td>
+               </tr> 
+            
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>MeeMee Unbreakable Automobile Car Toy Set</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹13,490</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Alphabet puzzle mat  (Multicolor).jpeg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Sales Package : </td><td>26 Alphabets & 10Numbers</td>
+               </tr> 
+            </tr> 
+            <tr>
+             <td>Minimum Age :</td><td>2 years</td>
+            </tr> 
+            <tr>
+             <td>Battery Operated : </td><td>No</td>
+            </tr> 
+            <tr>
+             <td>Generic Name :</td><td>Learning toys</td>
+               </tr> 
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>AGM Kids Puzzle 36 Tiles Educational Interlocking alphabet puzzle mat  (Multicolor)</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹21,990</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Miss & Chief Hannah and her Classroom Playset.jpeg" alt="John" style="width:267px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Material : </td><td>Plastic</td>
+               </tr> 
+            </tr> 
+            <tr>
+             <td>Ideal for :</td><td>Girls</td>
+            </tr> 
+            <tr>
+             <td>In the Box : </td><td>1 Doll, Accessories</td>
+            </tr> 
+            <tr>
+             <td>Height :</td><td>32 cm.</td>
+               </tr> 
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Miss & Chief Hannah and her Classroom Playset</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹21,790</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------end of toys row 1--->
+
+ <br>
+
+<!----start of products 1-->
+
+
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Products</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Himalaya baby product  (Multicolor).jpeg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h3>Specification</h3>
+        <table class="Details" width=100% style="text-align:left;"> 
+          <tr>
+            <td>Sales Package :</td><td>Gentle Baby Shampoo 100ML, Gentle Baby Shampoo 100ML, 
+                Diaper Rash Cream 20g, Gentle Baby Soap 75g, Baby Lotion 100ML, Baby Powder 100g, Gentle Baby Wipes 12's</td>
+           </tr> 
+           <tr>
+            <td>Generic Name :</td><td>Baby Care Combo</td>
+           </tr> 
+           <tr>
+            <td>Expiry Date :</td><td>4 Jul, 2023</td>
+           </tr> 
+           
+         
+</table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Himalaya baby product  (Multicolor)</p>
+            <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Johnson's Cottontouch Newborn Head-To-Toe Bath+Lotion  (Peach).jpeg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+              <td>Sales Package :</td><td>Cottontouch Newborn Bath 500ml & Lotion 500ml (Cream 50g & Oil 100ml)</td>
+            </tr> 
+            <tr>
+             <td>Series :</td><td>Bath Wash, Lotion</td>
+            </tr> 
+            <tr>
+             <td>Other Features :</td><td>It absorbs quickly and leaves behind no residue--only your
+                  newborn baby's touchably soft skin Designed to provide new babies with the gentle care.</td>
+            </tr> 
+            
+              
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Johnson's Head-To-Toe Bath+Lotion (Peach)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="bebe burp Ragi cookies Baby Crispies 200 g.jpeg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Quantity :</td><td>200 g</td>
+           </tr> 
+           <tr>
+            <td>Key Flavors :</td><td>Ragi, Finger Millet, Wheat, Cardamom</td>
+           </tr> 
+           <tr>
+            <td>Food Preference :</td><td>Vegetarian</td>
+           </tr> 
+           
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Ragi cookies Baby Crispies 200 g</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹61,300</ins> <del>₹59000</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Baby king world Cotton Infants MOSQUITO bed Cartoon design  (Fabric, Pink).jpeg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>
+                Material :</td><td>Cotton</td>
+           </tr> 
+           <tr>
+            <td>Color :</td><td>pink</td>
+           </tr> 
+           <tr>
+            <td>Generic Name :</td><td>Baby Beds</td>
+           </tr> 
+           <tr>
+            <td>
+                Sales Package :</td><td>1</td>
+           </tr> 
+           
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Baby bed Cartoon design  (Fabric, Pink)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----end of products row1-->
+
+<br>
+<img src="Kidsban1.png" style="width:100%">
+
+<!-----start of clothing row1-->
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Clothing</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Fancy Walas Presents New Born Baby Winter Wear Keep warm Baby Clothes.jpeg" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td>Sales Package :</td><td>1 Pcs Baby Top ,1 pcs butty Pajami ,1 pcs cap,1 pcs Bib</td>
+         </tr> 
+         <tr>
+          <td>Generic Name :</td><td>Baby Care Combo</td>
+         </tr> 
+        
+         
+         
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>New Born Baby Winter Wear</p>
+          <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Self Design Girls Jumpsuit.jpeg" alt="Jane" style="width:365px;height:300px;">
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  <tr>
+    <td>Color :</td><td>multicolour</td>
+         </tr> 
+         <tr>
+          <td>Fabric :</td><td>Cotton Blend</td>
+         </tr> 
+         <tr>
+          <td>Length Type :</td><td>Short</td>
+         </tr> 
+         <tr>
+          <td>Sleeve :</td><td>Sleeveless</td>
+   </tr>
+          
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Self Design Girls Jumpsuit</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹83,990</ins> <del>₹82,880</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Boys Festive & Party Kurta, Waistcoat and Breeches Set.jpeg" alt="Mike" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  
+         <tr>
+          <td>Size :</td><td>8 - 9 Years</td>
+         </tr> 
+         <tr>
+          <td>Color :</td><td>Maroon</td>
+         </tr> 
+         <tr>
+          <td>Type :</td><td>Kurta, Waistcoat and Breeches Set</td>
+   </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Boys Festive & Party Kurta and Breeches Set</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Baby Boys & Baby Girls Black Sleepsuit.jpeg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Colour :</td><td>Black</td>
+                 </tr> 
+                 <tr>
+                  <td>Sleeve :</td><td>Long Sleeve</td>
+                 </tr> 
+                 <tr>
+                  <td>Neck :</td><td>Round</td>
+                 </tr> 
+                 <tr>
+                  <td>Type :</td><td>Sleepsuit</td>
+           </tr>
+    </table>
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Baby Boys & Baby Girls Black Sleepsuit</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-----end of Clothing row1-->
+
+<br>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+

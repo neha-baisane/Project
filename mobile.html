@@ -1,0 +1,2163 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-commerce</title>
+    <style>
+
+#left {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#center {
+    text-align: center;
+}
+
+#right {
+    float: right;
+    text-align: right;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+      
+       .buttonc {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(249, 251, 252);
+  border: none;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.buttonc:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 4px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  color: grey;
+}
+
+.button {
+  outline: 1;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+.product-carousel-price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.button1 {
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  text-color: white;
+  
+}
+
+.button1 {
+  background-color: rgba(16, 173, 235, 0.541); 
+  color: black; 
+  border: 2px solid #ffffff;
+}
+
+.button1:hover {
+  background-color: #1ac1c7;
+  color: white;
+}
+.pull-right{
+  float:right;
+}
+
+
+
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 365px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(231, 229, 229);
+  color: rgb(233, 83, 83);
+}
+
+.flip-box-back {
+  background-color: rgb(182, 241, 239);
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+ 
+</head>
+<body bgcolor="#F1F3F6">
+<table  border="0" width="100%" bgcolor="#000000">
+<tr>
+    <td align="right"><img src="logo.png" style="width:120px;height:70px;"></td>
+    <td><input type="text" placeholder="Search for products, brand and more" name="search" style="width:550px;height:35px;">
+        <input type="button" value="Search" style="width: 120px;height: 35px;">
+    </td>
+    <th ><font color="white">Login</font></th>
+    <td><img src="cart.png" style="width:50px;height:40px;"></td>
+</tr>
+</table>
+<table  border="0" width="100%" height="8%" bgcolor="white" >
+  <tr>
+    
+    <th width="12.5%">
+
+        <a href=mobile.html><button class="buttonc"><span>Electronics</span></button></a>
+       
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Appliances.html> <button class="buttonc"><span>Appliances</span></button></a>
+    
+    </th>
+    
+    
+    <th  width="12.5%">
+        <a href=Men.html></p><button class="buttonc"><span>Men</span></button></a>
+    
+     </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Women.html> <button class="buttonc"><span>Women</span></button></a>
+   
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Kids.html> <button class="buttonc"><span>Kids</span></button></a>
+   
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=> <button class="buttonc"><span>Home and Furniture</span></button></a>
+           
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=> <button class="buttonc"><span>Books</span></button></a>
+            
+    </th>
+    
+    
+            <th width="12.5%">
+                <a href=><button class="buttonc"><span>Health</span></button></a>
+            
+    </th>
+        </tr>
+</table>
+    
+
+<!-----------start of mobile row 1-->
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Mobiles</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Iphone 12 PRO.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.1" (1170 x 2532)</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-camera"></i> Camera :</td><td>12 + 12 + 12 + TOF 3D | 12 MP</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>	 RAM :</td><td>6 GB</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-battery"></i> Battery :</td><td>NA</td>
+           </tr> 
+           <tr>
+            <td><i class="	fa fa-laptop"></i> Operating system :</td><td>iOS</td>
+           </tr> 
+           
+           <tr>
+            <td><i class="fa fa-microchip"></i> Processor :</td><td>Hexa-core</td>
+           </tr>
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Iphone 12 PRO</p>
+            <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Huawei P30 pro.jpg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.47" (1080 X 2340)</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-camera"></i> Camera :</td><td>40 + 20 + 8 + TOF | 32 MP</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>	 RAM :</td><td>8GB</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-battery"></i> Battery :</td><td>4200 mAh</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-laptop"></i> Operating system :</td><td>Android</td>
+           </tr>
+           
+            
+           <tr>
+            <td><i class="fa fa-microchip"></i> Processor :</td><td>Octa</td>
+           </tr>
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Huawei P30 pro</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Samsung galaxy note 20 ultra.jpg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          
+
+
+           <tr>
+            <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.9" (1440 x 3200)</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-camera"></i> Camera :</td><td>108 + 13 + 12 | 40 MP</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>	 RAM :</td><td>12 GB</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-battery"></i> Battery :</td><td>4500 mAh</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-laptop"></i> Operating system :</td><td>Android</td>
+           </tr>
+           
+            
+           <tr>
+            <td><i class="fa fa-microchip"></i> Processor :</td><td>Octa-core</td>
+           </tr>
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Samsung galaxy note 20 ultra</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="One Plus 8 pro.jpg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.78" (3168 x 1440)</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-camera"></i> Camera :</td><td>48 + 8 + 48 + 5 | 16 MP</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>	 RAM :</td><td>8 GB</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-battery"></i> Battery :</td><td>4510 mAh</td>
+           </tr> 
+           <tr>
+            <td><i class="	fa fa-laptop"></i> Operating system :</td><td>Android</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-microchip"></i> Processor :</td><td>Octa-core</td>
+           </tr>
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>One Plus 8 pro</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------end of mobile row 1--->
+
+ <br>
+
+ <!------start of mobile row 2-->
+
+ <div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="IQOO 3 5G.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.1" (1170 x 2532)</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-camera"></i>Camera :</td><td>12 + 12 + 12 + TOF 3D | 12 MP</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>RAM :</td><td>6 GB</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-battery"></i>Battery :</td><td>NA</td>
+         </tr> 
+         <tr>
+          <td><i class="	fa fa-laptop"></i>Operating system :</td><td>iOS</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i> Processor :</td><td>Hexa-core</td>
+         </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>IQOO 3 5G</p>
+          <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="One plus 8 t.jpg" alt="Jane" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.55" (1080 x 2400)</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-camera"></i>Camera :</td><td>48 + 16 + 5 + 2 | 16 MP</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>RAM :</td><td>8 GB</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-battery"></i>Battery :</td><td>4500 mAh</td>
+         </tr> 
+         <tr>
+          <td><i class="	fa fa-laptop"></i>Operating system :</td><td>Android</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i> Processor :</td><td>Octa</td>
+         </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>One plus 8 t</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Asus Rog phone 3.jpg" alt="Mike" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.59" (1080 x 2340)</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-camera"></i> Camera :</td><td>64 + 13 + 5 | 24 MP</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>	 RAM :</td><td>12 GB</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-battery"></i> Battery :</td><td>6000 mAh</td>
+         </tr> 
+         <tr>
+          <td><i class="	fa fa-laptop"></i> Operating system :</td><td>Android</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i> Processor :</td><td>Octa-core</td>
+         </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Asus Rog phone 3</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="One Plus nord.jpg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-desktop"></i>Screen Size :</td><td>6.44" (1080 x 2400)</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-camera"></i>Camera :</td><td>48 + 8 + 5 + 2 | 32 MP</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>RAM :</td><td>8 GB</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-battery"></i>Battery :</td><td>4115 mAh</td>
+         </tr> 
+         <tr>
+          <td><i class="	fa fa-laptop"></i>Operating system :</td><td>Android</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i> Processor :</td><td>Octa-core</td>
+         </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>One Plus nord</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!----end of mobile row 2-->
+
+
+
+
+
+
+
+
+
+
+<!----start of laptop row 1-->
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Laptops</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="ASUS S510UN-BQ217T.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h3>Specification</h3>
+        <table class="Details" width=100% style="text-align:left;"> 
+          <tr>
+            <td><i class="fa fa-database"></i>Storage :</td><td>1 TB HDD</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i5 (8th Gen) Processor</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>Ram :</td><td>8 GB DDR4 RAM</td>
+           </tr> 
+           <font style="text-color:black">ASUS S510UN-BQ217T is one of the several models the brand has in the market that features Intel 8th gen Core i5 processor.
+               It can be bought for around Rs 60,000. In the device you get a 15.6-inch IPS full HD (1080x1920 pixels) display with nano bezels on the sides. 
+               Powering the device is the Intel 8th gen Core i5 processor with 8GB RAM and 1TB inbuilt storage. 
+              It’s battery is rated to deliver up to 8 hours of charge.</font>
+           
+       
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>ASUS S510UN-BQ217T</p>
+            <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="ACER A515-51G.jpg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-database"></i>Storage :</td><td>1 TB HDD</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i5 (8th Gen) Processor</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>Ram :</td><td>4 GB DDR4 RAM</td>
+           </tr> 
+           Acer A515-51G falls in the same price range as HP NOTEBOOK 15-BS146TU. It can be purchased online for around Rs 43,700. 
+           The laptop is powered by Intel Core i5-8250U processor along with 4GB DDR4 RAM, NVIDIA GeForce MX150 and 1TB SATA storage. 
+           It features 15.6-inch display and has 1TB inbuilt storage.
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>ACER A515-51G</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src=" HP PAVILION 15-CC129TX.jpg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-database"></i>Storage :</td><td>1 TB HDD</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i5 (8th Gen) Processor</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>Ram :</td><td>8 GB DDR4 RAM</td>
+           </tr> 
+           HP PAVILION 15-CC129TX also has the Intel 8th generation Core i5 processor but is slightly better looking than the NOTEBOOK 15-BS146TU. 
+           The Windows 10-based Pavilion 15-CC129TX includes NVIDIA GeForce 940MX GPU with dedicated 2GB DDR3 RAM.
+          The device features 15.6-inch full HD (1080x1920 pixels) display and is backed by a 3-cell Li-ion battery.
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p> HP PAVILION 15-CC129TX</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹61,300</ins> <del>₹59000</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="DELL INSPIRON 5570.jpg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-database"></i>Storage :</td><td>2 TB HDD</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i7 (8th Gen) Processor</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>Ram :</td><td>8 GB DDR4 RAM</td>
+           </tr> 
+           Dell Inspiron 5570 is also a powerhouse given price tag it carries. You can get this device online for around Rs 67,000 (or lower). 
+           The Inspiron 5570 features 15.6-inch full HD (1080x1920 pixels) anti-glare display and runs Windows 10 out of the box. 
+           The graphics are handled by AMD Radeon 530 GPU and 2TB of inbuilt storage.
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>DELL INSPIRON 5570</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----end of latop row1-->
+
+ <br>
+
+ <!-----start of laptop row2-->
+
+
+ <div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="HP NOTEBOOK 15-BS146TU.png" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-database"></i>Storage :</td><td>1 TB HDD</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i5 (8th Gen) Processor</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>Ram :</td><td>4 GB DDR4 RAM</td>
+         </tr> 
+         HP is also out with a few of its laptops running Intel 8th generation processor. 
+         One of them is the HP NOTEBOOK 15-BS146TU. 
+         Priced around Rs 41,500, the laptop runs on Intel 8th gen Core i5 processor along with 4GB RAM, 1TB hard disk drive and Intel Graphics 620.
+          It has a 15.6-inch full HD (1080x1920 pixels) resolution display and runs Windows 10 Home operating system.
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>HP NOTEBOOK 15-BS146TU</p>
+          <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="DELL INSPIRON 15 7570.jpg" alt="Jane" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-database"></i>Storage :</td><td>1 TB HDD</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i7 (8th Gen) Processor</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>Ram :</td><td>8 GB DDR4 RAM</td>
+         </tr> 
+         Dell Inspiron 15 7570 is one of the few laptops that runs on 8th generation Core i5 processor.
+           
+          The laptop includes a 15.6-inch full-HD (1080x1920 pixels) display and a NVIDIA GeForce 940MX GPU with dedicated 4GB GDDR5 RAM. 
+          The Windows 10-based Inspiron 15 7570 is backed by 5 watt hour battery and weighs approximately 2kg.
+          
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>DELL INSPIRON 15 7570</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹83,990</ins> <del>₹82,880</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Apple macbook pro 16.jpg" alt="Mike" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-database"></i>OS :</td><td>iOS</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i9 | NA</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-desktop"></i>Display :</td><td>16" (3072 X 1920)</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>Memory :</td><td>1 TB NA/16 GBGB DDR4</td>
+         </tr> 
+         The Apple MacBook Pro 16-inch is powered by Intel's 9th generation processors going all the way up to Core i9. 
+         The 16-inch MacBook Pro can now also be configured by consumers, allowing you to get the machine that's right for you.
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Apple macbook pro 16”</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="lenovo ideapad c340.jpg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-database"></i>OS :</td><td>Windows 10 Home</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i3-8145U | 2.1</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-desktop"></i>Display :</td><td>14" (1920 x 1080)</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-database"></i>Memory :</td><td>512 4/4GB SDRAM</td>
+         </tr> 
+         Here's proof that Lenovo's 2019 IdeaPad can in fact do Yoga. 
+         The IdeaPad C340 is a convertible laptop that's not shy to do graphic work because it sports an Nvidia GeForce MX230 graphics card.
+          It comes powered by either an Intel Core series or AMD Ryzen series processor.
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>lenovo ideapad c340 </p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ 
+<!-----end of laptop row 2------>
+
+<br>
+
+
+
+<!----start of cam row1-->
+
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Cameras</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Canon EOS C70.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-tv"></i>Display Type :</td><td>LCD</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-desktop"></i>Display Size :</td><td>3.5 inch</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-hand-pointer-o"></i>Touchscreen :</td><td>Yes</td>
+         </tr>
+         
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Canon EOS C70</p>
+          <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Nikon Z5.jpg" alt="Jane" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  <tr>
+    <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-tv"></i>Display Type :</td><td>TFT LCD</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-desktop"></i>Display Size :</td><td>3.5 inch</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-hand-pointer-o"></i>Touchscreen :</td><td>Yes</td>
+   </tr>
+          
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Nikon Z5</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹83,990</ins> <del>₹82,880</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Nikon D6.jpg" alt="Mike" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  <tr>
+    <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-tv"></i>Display Type :</td><td>LCD</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-desktop"></i>Display Size :</td><td>3.2 inch</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+   </tr> 
+   <tr>
+    <td><i class="fa fa-hand-pointer-o"></i>Touchscreen :</td><td>Yes</td>
+   </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Nikon D6</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Sony A6600.jpg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-tv"></i>Display Type :</td><td>TFT LCD</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-desktop"></i>Display Size :</td><td>3 inch</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-hand-pointer-o"></i>Touchscreen :</td><td>Yes</td>
+           </tr>
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Sony A6600</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-----end of cam row1-->
+
+
+
+
+<br>
+
+
+<!---start of cam row2-->
+
+
+
+
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Canon EOS 250D.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h3>Specification</h3>
+        <table class="Details" width=100% style="text-align:left;"> 
+          <table class="Details" width=100%> 
+            <tr>
+              <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-tv"></i>Display size :</td><td>3 inch</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-bullseye"></i>Sensor Type :</td><td>APS-C</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-image"></i>Effective Pixels :</td><td>24.1 MP</td>
+             </tr>
+           
+       
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Canon EOS 250D</p>
+            <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Sony SLT A99V 24.3MP DSLR Camera.jpg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <table class="Details" width=100%> 
+            <tr>
+              <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-tv"></i>Display size :</td><td>3 inch</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-bullseye"></i>Sensor Type :</td><td>CMOS</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-image"></i>Effective Pixels :</td><td>18 MP</td>
+             </tr>
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Sony SLT A99V 24.3MP DSLR Camera</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Ricoh Pentax Q10 12.4MP DSLR Camera.jpg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <table class="Details" width=100%> 
+            <tr>
+              <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-tv"></i>Display Type :</td><td>TFT LCD</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-bullseye"></i>Sensor Type :</td><td>CMOS</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+             </tr> 
+             <tr>
+              <td><i class="fa fa-image"></i>Effective Pixels :</td><td>12.4 MP</td>
+             </tr>
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Ricoh Pentax Q10 12.4MP DSLR Camera</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹61,300</ins> <del>₹59000</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Canon EOS 1200D 18MP DSLR Camera.jpg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-camera"></i>Camera Type :</td><td>DSLR Camera</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-tv"></i>Display size :</td><td>3 inch</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-bullseye"></i>Sensor Type :</td><td>APS-C</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-battery"></i>Battery Type :</td><td>Lithium ion</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-image"></i>Effective Pixels :</td><td>24.1 MP</td>
+           </tr>
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Canon EOS 1200D 18MP DSLR Camera</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----end of camera row2-->
+
+
+
+
+
+
+
+
+<!----start of watch row1-->
+
+
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Smart Watches</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Xiaomi Mi Watch Revolve.png" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Color :</td><td>Space Black </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Compatible OS :</td><td> Android, iOS</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Material :</td><td>Silicone </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td> Round</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Ideal For :</td><td> Unisex</td>
+         </tr> 
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Xiaomi Mi Watch Revolve</p>
+          <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Garmin Fenix 6 Pro Solar.jpg" alt="Jane" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Color :</td><td>Slate Gray, Whitestone </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Compatible OS :</td><td>Android, iOS </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Material :</td><td>Silicone </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td> Round</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Ideal For :</td><td> Unisex</td>
+         </tr> 
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Garmin Fenix 6 Pro Solar</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹83,990</ins> <del>₹82,880</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Garmin Instinct Solar.jpg" alt="Mike" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Color :</td><td> Black</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Compatible OS :</td><td> Android, iOS</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Material :</td><td>Silicone </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td>Round </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Ideal For :</td><td> Unisex</td>
+         </tr> 
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Garmin Instinct Solar</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="Ticwatch Pro 3 GPS.jpg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Color :</td><td> Black</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Compatible OS :</td><td> Android, iOS</td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Strap Material :</td><td>Silicone </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td>Round </td>
+         </tr> 
+         <tr>
+          <td><i class="fa fa-clock-o"></i>Ideal For :</td><td> Unisex</td>
+         </tr> 
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Ticwatch Pro 3 GPS</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-----end of watch row1-->
+
+
+
+
+<br>
+
+
+<!---start of watch row2-->
+
+
+
+
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Apple Watch SE GPS + Cellular.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h3>Specification</h3>
+        <table class="Details" width=100% style="text-align:left;"> 
+          <tr>
+            <td><i class="fa fa-clock-o"></i>Strap Color :</td><td> White, Yellow, Black, Orange, Blue</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Display Size :</td><td>40mm </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td>Rectangle </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Display Type :</td><td>OLED Retina </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Ideal For :</td><td>Unisex </td>
+           </tr> 
+           
+       
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Apple Watch SE GPS + Cellular</p>
+            <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Apple Watch SE GPS.jpg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-clock-o"></i>Strap Color :</td><td> White, Yellow, Black, Orange, Blue</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Display Size :</td><td>40mm </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Display Type :</td><td>OLED Retina </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td> Rectangle</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Ideal For :</td><td>Unisex </td>
+           </tr> 
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Apple Watch SE GPS</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Honor Watch GS Pro.jpg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-clock-o"></i>Strap Color :</td><td>Camo Blue, Charcoal Black, Marl White </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Compatible OS :</td><td>Android, iOS </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Display Type :</td><td>AMOLED </td>
+           </tr>
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td> Round</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Ideal For :</td><td> Unisex</td>
+           </tr> 
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Honor Watch GS Pro</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹61,300</ins> <del>₹59000</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Samsung Galaxy Watch 3 4G (45mm).jpg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-clock-o"></i>Display Size :</td><td>45mm </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Compatible OS :</td><td>Android, iOS </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Strap Material :</td><td>Leather </td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Dial Shape :</td><td> Round</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-clock-o"></i>Ideal For :</td><td> Unisex</td>
+           </tr> 
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Samsung Galaxy Watch 3 4G (45mm)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----end of watch row2-->
+
+
+</body>
+
+</html>
+
+
+
+
+
+
