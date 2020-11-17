@@ -1,0 +1,965 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-commerce</title>
+    <style>
+
+
+
+#left {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
+#center {
+    text-align: center;
+}
+
+
+
+
+#right {
+    float: right;
+    text-align: right;
+    padding-left: 10px;
+}
+
+
+  .buttonc {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(249, 251, 252);
+  border: none;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.buttonc:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 4px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  color: grey;
+}
+
+.button {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+.product-carousel-price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.button1 {
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  text-color: white;
+  
+}
+
+.button1 {
+  background-color: rgba(16, 173, 235, 0.541); 
+  color: black; 
+  border: 2px solid #ffffff;
+}
+
+.button1:hover {
+  background-color: #1ac1c7;
+  color: white;
+}
+.pull-right{
+  float:right;
+}
+
+
+
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 365px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(231, 229, 229);
+  color: rgb(233, 83, 83);
+}
+
+.flip-box-back {
+  background-color: rgb(182, 241, 239);
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+ 
+</head>
+<body bgcolor="#F1F3F6">
+<table  border="0" width="100%" bgcolor="#000000">
+<tr>
+    <td align="right"><img src="logo.png" style="width:120px;height:70px;"></td>
+    <td><input type="text" placeholder="Search for products, brand and more" name="search" style="width:550px;height:35px;">
+        <input type="button" value="Search" style="width: 120px;height: 35px;">
+    </td>
+    <th ><font color="white">Login</font></th>
+    <td><img src="cart.png" style="width:50px;height:40px;"></td>
+</tr>
+</table>
+<table  border="0" width="100%" height="8%" bgcolor="white" >
+  <tr>
+    
+    <th width="12.5%">
+
+        <a href=mobile.html><button class="buttonc"><span>Electronics</span></button></a>
+       
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Appliances.html> <button class="buttonc"><span>Appliances</span></button></a>
+    
+    </th>
+    
+    
+    <th  width="12.5%">
+        <a href=Men.html></p><button class="buttonc"><span>Men</span></button></a>
+    
+     </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Women.html> <button class="buttonc"><span>Women</span></button></a>
+   
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Kids.html> <button class="buttonc"><span>Kids</span></button></a>
+   
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=> <button class="buttonc"><span>Home and Furniture</span></button></a>
+           
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=> <button class="buttonc"><span>Books</span></button></a>
+            
+    </th>
+    
+    
+            <th width="12.5%">
+                <a href=><button class="buttonc"><span>Health</span></button></a>
+            
+    </th>
+        </tr>
+</table>
+    
+<img src="appliances banner.png" style="width:100%">
+<!-----------start of mobile row 1-->
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Washing Machines</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="LG P7015SRAY 7.0 Kg Semi Automatic Top Load Washing Machine.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td></i>Top Load Capacity : </td><td>7.0 Kgs</td>
+           </tr> 
+           <tr>
+            <td></i> Soak :</td><td>Yes</td>
+           </tr> 
+           <tr>
+            <td>Ag+ Silver Wash: </td><td>No</td>
+           </tr> 
+           <tr>
+            <td>Type :</td><td>Air Dry</td>
+           </tr> 
+           <tr>
+            <td>Child Lock :</td><td>No</td>
+           </tr> 
+           
+          
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>LG P7015SRAY 7.0 Kg Semi Automatic Top Load Washing Machine</p>
+            <div class="product-carousel-price">
+            <ins>₹13,490</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Samsung WA65A4002VS.jpg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td></i>Top Load Capacity : </td><td>6.5 Kgs</td>
+               </tr> 
+               <tr>
+                <td></i> Soak :</td><td>Yes</td>
+               </tr> 
+               <tr>
+                <td>Ag+ Silver Wash: </td><td>No</td>
+               </tr> 
+               <tr>
+                <td>Type :</td><td>Air Turbo</td>
+               </tr> 
+               <tr>
+                <td>Child Lock :</td><td>Yes</td>
+               </tr> 
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Samsung WA65A4002VS 6.5 Kg Fully Automatic Top Load Washing Machine</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹13,490</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="bosch.jpg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          
+
+
+           <tr>
+            <td></i>Top Load Capacity : </td><td>6 Kgs</td>
+        </tr> 
+        <tr>
+         <td></i> Soak :</td><td>Yes</td>
+        </tr> 
+        <tr>
+         <td>Ag+ Silver Wash: </td><td>No</td>
+        </tr> 
+        <tr>
+         <td>Type :</td><td>Air Turbo</td>
+        </tr> 
+        <tr>
+         <td>Child Lock :</td><td>No</td>
+           </tr>
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Bosch WAB16161IN 6 Kg Fully Automatic Front Load Washing Machine</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹21,990</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="FB Diva Aqua.jpg" alt="John" style="width:267px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td></i>Top Load Capacity : </td><td>6 Kgs</td>
+        </tr> 
+        <tr>
+         <td></i> Soak :</td><td>Yes</td>
+        </tr> 
+        <tr>
+         <td>Ag+ Silver Wash: </td><td>No</td>
+        </tr> 
+        <tr>
+         <td>Type :</td><td>Air Turbo</td>
+        </tr> 
+        <tr>
+         <td>Child Lock :</td><td>Yes</td>
+           </tr>
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>IFB Diva Aqua SX 6 Kg Fully Automatic Front Load Washing Machine</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹21,790</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------end of washing machine row 1--->
+
+
+
+<!----start of refrigerator row 1-->
+
+
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Refrigerators</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="LG 260 L 4-Star Frost Free Double Door Refrigerator.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h3>Specification</h3>
+        <table class="Details" width=100% style="text-align:left;"> 
+          <tr>
+            <td>Dimensions (W x D x H) :</td><td>23.03 x 27.67 x 58.07 inches</td>
+           </tr> 
+           <tr>
+            <td>Refrigerator type :</td><td>Double door</td>
+           </tr> 
+           <tr>
+            <td>Cooling technology :</td><td>Ice Beam Door Cooling</td>
+           </tr> 
+           <tr>
+            <td>Energy efficiency rating :</td><td>4 star</td>
+           </tr> 
+           <font style="text-color:black">This model, from one of the best refrigerator brands in India, 
+            features the Ice Beam Door Cooling technology which ensures even temperature throughout the fridge.</font>
+           
+       
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>LG 260 L 4-Star Frost Free Double Door Refrigerator</p>
+            <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Whirlpool 340 L 3-Star Frost Free Double Door Refrigerator.jpg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Dimensions (W x D x H) :</td><td>24.41 x 26.38 x 66.14 inches</td>
+               </tr> 
+               <tr>
+                <td>Refrigerator type :</td><td>Double door</td>
+               </tr> 
+               <tr>
+                <td>Cooling technology :</td><td>6TH SENSE IntelliFresh /6TH SENSE DeepFreeze</td>
+               </tr> 
+               <tr>
+                <td>Energy efficiency rating :</td><td>3 star</td>
+               </tr>
+               A contender for the best fridge brand, Whirlpool offers MicroBlock technology that arrests bacterial growth by 99% with this fridge.
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Whirlpool 340 L 3-Star Frost Free Double Door Refrigerator</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Haier 247 L Frost Free Double Door Refrigerator.jpg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Dimensions (W x D x H) :</td><td>21.57 x 27.83 x 58.74 inches</td>
+        </tr> 
+        <tr>
+         <td>Refrigerator type :</td><td>Double door</td>
+        </tr> 
+        <tr>
+         <td>Cooling technology :</td><td>1 hour icing</td>
+        </tr> 
+        <tr>
+         <td>Energy efficiency rating :</td><td>3 star</td>
+           </tr> 
+           One of the top brands in refrigerators in India, Haier’s 247 L Frost Free Double Door Refrigerator makes an 
+           excellent addition to your kitchen with its outstanding features such as a vegetable crisper, inbuilt 1 hour icing technology, 
+           and a top LED light.
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Haier 247 L Frost Free Double Door Refrigerator</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹61,300</ins> <del>₹59000</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="Samsung 253 L Frost Free Double Door Refrigerator.jpg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td><i class="fa fa-database"></i>Storage :</td><td>2 TB HDD</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-microchip"></i>Processor :</td><td>Intel Core i7 (8th Gen) Processor</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-desktop"></i>Display :</td><td>15.6" (39.62 cm) display, 1920 x 1080 px</td>
+           </tr> 
+           <tr>
+            <td><i class="fa fa-database"></i>Ram :</td><td>8 GB DDR4 RAM</td>
+           </tr> 
+           The Stabiliser Free Operation prevents any electrical damages owing to power fluctuations.
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Samsung 253 L Frost Free Double Door Refrigerator</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹129900</ins> <del>₹19900</del></div>
+            <table width="100%">
+              <tr>
+          <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+          <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+          </tr>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----end of refrigerator row1-->
+
+
+
+<!-----start of ac row1-->
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Air Conditioners</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="LLOYD LS18V1.jpg" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td>Power Input :</td><td>1740 W</td>
+         </tr> 
+         <tr>
+          <td>Type :</td><td>Split Energy</td>
+         </tr> 
+         <tr>
+          <td>Rating :</td><td>4 Star</td>
+         </tr> 
+         <tr>
+          <td>Capacity :</td><td>1.5 Ton</td>
+         </tr> 
+         
+         
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>LLOYD LS18V1</p>
+          <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="mitsubishi srk 20 cls 6.jpg" alt="Jane" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  <tr>
+    <td>Noise :</td><td>42 DB Indoor Noise</td>
+   </tr> 
+   <tr>
+    <td>Power Input :</td><td>1220 W</td>
+   </tr> 
+   <tr>
+    <td>Type :</td><td>Split</td>
+   </tr>  
+   <tr>
+    <td>Energy Rating :</td><td>5 Star</td>
+   </tr>
+          
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Mitsubishi srk 20 cls 6</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹83,990</ins> <del>₹82,880</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="LG lSa5af5d.jpg" alt="Mike" style="width:365px;height:300px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+    <tr>
+        <td>Type :</td><td>Split</td>
+       </tr>  
+       <tr>
+        <td>Energy Rating :</td><td>5 Star</td>
+       </tr>
+       <tr>
+        <td>Capacity :</td><td>1.5 Ton</td>
+       </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>LG lSa5af5d</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="voltas 185 zyj.jpg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Power Input :</td><td>1476 W</td>
+               </tr> 
+               <tr>
+                <td>Type :</td><td>Split Energy</td>
+               </tr> 
+               <tr>
+                <td>Rating :</td><td>5 Star</td>
+               </tr> 
+               <tr>
+                <td>Capacity :</td><td>1.5 Ton</td>
+               </tr> 
+    </table>
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Voltas 185 zyj</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹129900</ins> <del>₹19900</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-----end of ac row1-->
+
+<br>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
