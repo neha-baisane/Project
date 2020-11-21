@@ -1,0 +1,1212 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web\css\all.min.css">
+<title>E-commerce</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+ 
+    <style>
+
+
+
+#left {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
+#center {
+    text-align: center;
+}
+
+
+
+#right {
+    float: right;
+    text-align: right;
+    padding-left: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+  .buttonc {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgb(249, 251, 252);
+  border: none;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.buttonc:hover {
+  background-color:#F0F0F0;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  
+  width: 120px;height: 35px; border-radius: 8px ; 
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 4px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  color: grey;
+}
+
+.button {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: rgb(38, 90, 245);
+}
+
+
+.product-carousel-price ins {
+  color: #5a88ca;
+  font-weight: 700;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.button1 {
+  border: none;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  text-color: white;
+  
+}
+
+.button1 {
+  background-color: rgba(16, 173, 235, 0.541); 
+  color: black; 
+  border: 2px solid #ffffff;
+}
+
+.button1:hover {
+  background-color: #1ac1c7;
+  color: white;
+}
+.pull-right{
+  float:right;
+}
+
+
+
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 365px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:white;
+  color: rgb(233, 83, 83);
+}
+
+.flip-box-back {
+  background-color: rgb(182, 241, 239);
+  color: white;
+  transform: rotateY(180deg);
+}
+.container1{
+  width:88%;
+  margin:0px auto;
+}
+.top-brand{
+  background-color:#F0F0F0;
+  margin:80px 0;
+}
+.top-brand-wrap{
+  
+  display:flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.top-brand-box{
+  
+  width: 16%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.top-brand-box img{
+opacity: 0.5;
+width:100%;
+height:auto;
+}
+.top-brand-box img:hover
+{ 
+ opacity: 1;
+}
+/*footer*/
+
+footer
+{
+  background-color: #282828;
+  color: #aba8a8;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.footer-widget
+{
+  margin: 0 10px;
+  text-align: justify;
+}
+.container2
+{
+  width: 100%;
+  /*widows: 100%;
+  margin: 0px auto;*/
+}
+.wrap
+{
+  display: table;
+  box-sizing: border-box;
+}
+.row1
+{ background-color: #282828;
+  width:100%;
+}
+.column1
+{
+ width:25%;
+ display:table-cell;
+
+ /*text-align: center;*/
+}
+.widget-title
+{
+  color: #fff;
+  margin-bottom:30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.about-widget p
+{
+  line-height: 20px;
+  margin: 15px;
+}
+.cards i
+{
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 12px;
+}
+.about-widget p span
+{
+  margin-right: 10px;
+}
+.categories-widget,.information-widget
+{
+ 
+  margin: 10px 0;
+}
+.footer-widget ul
+{
+  margin-left: 5px;
+}
+.footer-widget ul li
+{
+  padding-bottom: 10px;
+}
+.footer-widget ul li a
+{
+  color: #aba8a8;
+  text-decoration: none;
+}
+.footer-widget ul li a:hover
+{
+  color: #d2d2d2;
+  margin-left: 10px;
+  transition: all .5s ease;
+}
+.contact-address
+{
+ /* background-color: #282828;
+  color: #aba8a8;*/
+  padding-bottom: 20px;
+  border-bottom: 1px solid #9a98988c;
+  line-height: 20px;
+}
+.contact-number, .contact-email
+{
+  margin: 10px 0;
+}
+.contact-address i, .contact-number i, .contact-email i
+{
+  margin-right: 10px;
+}
+.social-widget a
+{
+  display: inline-block;
+  font-size: 28px;
+  color: #aba8a8;
+  margin-right: 10px;
+}
+.social-widget a:hover
+{
+  color: #d2d2d2;
+  transition: all .4s ease;
+}
+.copyright
+{
+  background-color: #000;
+  padding: 20px;
+  width:100%;
+}
+.copyright p
+{
+  color: #d2d2d2;
+  text-align: center;
+}
+</style>
+
+ 
+</head>
+<body bgcolor=white>
+  <table border="0" width="100%" bgcolor="#000000" >
+      <tr>
+          <td align="right"><img src="logo.png" style="width:120px;height:70px;"></td>
+          <td><input type="text" placeholder="  Search for products, brand and more" name="search" style="width:550px;height:35px; border-radius: 10px;">
+              <input type="button" value="Search" class="button2">
+          </td>
+          <th ><input type="button" value="Login" class="button2"></th>
+          <td><input type="button" value="Cart" class="button2"></td>
+      </tr>
+  </table>
+
+<table  border="0" width="100%" height="8%" bgcolor="white" >
+  <tr>
+    
+    <th width="12.5%">
+
+        <a href=mobile.html><button class="buttonc"><span>Electronics</span></button></a>
+       
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Appliances.html> <button class="buttonc"><span>Appliances</span></button></a>
+    
+    </th>
+    
+    
+    <th  width="12.5%">
+        <a href=Men.html></p><button class="buttonc"><span>Men</span></button></a>
+    
+     </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Women.html> <button class="buttonc"><span>Women</span></button></a>
+   
+    </th>
+    
+    
+    
+    <th width="12.5%">
+        <a href=Kids.html> <button class="buttonc"><span>Kids</span></button></a>
+   
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href='Home and furniture.html'> <button class="buttonc"><span>Home & Furniture</span></button></a>
+           
+    </th>
+    
+    
+    
+            <th width="12.5%">
+                <a href=Books.html> <button class="buttonc"><span>Books</span></button></a>
+            
+    </th>
+    
+    
+            <th width="12.5%">
+                <a href=Health.html><button class="buttonc"><span>Health</span></button></a>
+            
+    </th>
+        </tr>
+</table>
+    
+<div style="position: relative;
+text-align: center;
+color: white;">
+<a href="#"><img src="bookban1.png" style="width:100%"></a>
+<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); font-size: 29px;font-style: italic;"
+font-family:'Comic Sans MS'""><font color=white>
+  <h1><b>Your Online Book Store</b></h1>Read what you love. Love what you read<br><br>
+  
+  </font></div></div>
+  <br>
+<hr>
+<br>
+<!-----------start of book row 1-->
+<br><br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px;align:center"><b>Best Selling Books</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+<hr>
+<br><br>
+
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="ikigai.jpeg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Imprint : </td><td>Hutchinson</td>
+        </tr> 
+        <tr>
+         <td>Publication Year :</td><td>2017 September</td>
+        </tr> 
+        <tr>
+         <td>Author Info  : </td><td>NA</td>
+        </tr> 
+        <tr>
+         <td>Pages :</td><td>208</td>
+           </tr> 
+           
+          
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Ikigai - The Japanese Secret to a Long and Happy Life  (English, Hardcover)</p>
+            <div class="product-carousel-price">
+            <ins>₹335</ins> <del>₹499</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="certificate.jpeg" alt="Jane" style="width:300px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Imprint : </td><td>
+                  OUP India</td>
+               </tr> 
+            </tr> 
+            <tr>
+             <td>Exam :</td><td>Civil Services General</td>
+            </tr> 
+            <tr>
+             <td>Binding : </td><td>Paperback</td>
+            </tr> 
+            <tr>
+             <td>Language :</td><td>English</td>
+               </tr> 
+            
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Certificate Physical and Human Geography  (English, Paperback, Goh Cheng Leong)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹285</ins> <del>₹325</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="attitude.jpeg" alt="Mike" style="width:260px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Imprint : </td><td>Collins</td>
+               </tr> 
+            </tr> 
+            <tr>
+             <td>Height :</td><td>215 mm</td>
+            </tr> 
+            <tr>
+             <td>Length : </td><td>140 mm</td>
+            </tr> 
+            <tr>
+             <td>Weight :</td><td>225 gr</td>
+               </tr> 
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Attitude Is Everything: Change Your Attitude ... Change Your Life!  (English, Paperback)</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹159</ins> <del>₹199</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="rich-dad.jpeg" alt="John" style="width:267px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+                <td>Language : </td><td>Hindi</td>
+               </tr> 
+            </tr> 
+            <tr>
+             <td>Binding :</td><td>Paperback</td>
+            </tr> 
+            <tr>
+             <td>Pages : </td><td>320</td>
+            </tr> 
+            <tr>
+             <td>Weight :</td><td>225 gr</td>
+               </tr> 
+
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Rich Dad Poor Dad  (Hindi, Paperback, Robert T. Kiyosaki)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹165</ins> <del>₹299</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<br>
+<!------end of book row 1--->
+<div style="position: relative;
+text-align: center;
+color: white;">
+<a href="#"><img src="bookban2.png" style="width:100%"></a>
+<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); font-size: 29px;font-style: italic;"
+font-family:'Comic Sans MS'""><font color=white>
+  <h1><b>Biographies And Autobiographies</b></h1>Read what you love. Love what you read<br><br>
+  
+  </font></div></div>
+
+  <br>
+  <hr>
+  <br>
+<!----start of book row 2-->
+
+
+
+<br><br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Biographies And Autobiographies</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+<hr>
+<br><br>
+<div class="row">
+    <div class="column">
+      <div class="card">
+     <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="wings.jpeg" alt="Jane" style="width:365px;height:300px;"  >
+
+      </div>
+      <div class="flip-box-back">
+
+<h3>Specification</h3>
+        <table class="Details" width=100% style="text-align:left;"> 
+          <tr>
+            <td>Language</td><td>: English</td>
+           </tr> 
+           <tr>
+            <td>Publisher :</td><td>Sangam Books Ltd</td>
+           </tr> 
+           <tr>
+            <td>Genre :</td><td>Biography & Autobiography</td>
+           </tr> 
+           
+         
+</table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Wings of Fire Book(English, Paperback, Tiwari Arun)</p>
+            <div class="product-carousel-price">
+            <ins>₹245</ins> <del>₹395</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>  
+
+
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="theudder.jpeg" alt="Jane" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+            <tr>
+              <td>Language :</td><td>English</td>
+            </tr> 
+            <tr>
+             <td>Binding :</td><td>Paperback</td>
+            </tr> 
+            <tr>
+             <td>Publisher :</td><td>Fingerprint Publishing</td>
+            </tr> 
+            <tr>
+             <td>Genre :</td><td>Biography & Autobiography</td>
+               </tr>
+              
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Dont Kill Him! - The story of my life with Bhagwan Rajneesh  (English, Paperback,)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹249</ins> <del>₹250</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="think-and-grow-rich.jpeg" alt="Mike" style="width:365px;height:300px;" >
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Language :</td><td>English</td>
+          </tr> 
+          <tr>
+           <td>Binding :</td><td>Paperback</td>
+          </tr> 
+          <tr>
+           <td>Publisher :</td><td>Rupa & Co</td>
+          </tr> 
+          <tr>
+           <td>Genre :</td><td>Biography & Autobiography</td>
+             </tr>
+           
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+       
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>THINK AND GROW RICH  (English, Paperback, Hill Napoleon)</p>
+          
+          <div class="product-carousel-price">
+            <ins>₹88</ins> <del>₹150</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <div class="column">
+      <div class="card">
+
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+
+        <img src="man-me-hai-vishwas.jpeg" alt="John" style="width:365px;height:300px;" >
+    
+      </div>
+      <div class="flip-box-back">
+
+<h2>Specification</h2>
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Language :</td><td>Marathi</td>
+          </tr> 
+          <tr>
+           <td>Binding :</td><td>Paperback</td>
+          </tr> 
+          <tr>
+           <td>Publisher :</td><td>Rajhansa Prakashan</td>
+          </tr> 
+          <tr>
+           <td>Genre :</td><td>Biography & Autobiography</td>
+             </tr>
+           
+  </table>
+      
+      </div>
+    </div>
+  </div>
+        <div class="container">
+          <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+          <p>Man Me Hai Vishwaas  (Marathi, Paperback, Patil Vishwas Nangre)</p>
+         
+          <div class="product-carousel-price">
+            <ins>₹145</ins> <del>₹299</del></div>
+            <table width="100%">
+                <tr>
+            <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+            <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+            </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----end of book row 2-->
+
+<br>
+<hr>
+<br>
+
+<!-----start of Self Help Books row1-->
+
+<br>
+
+<div id="left"><font style="font-family:Arial; font-size:25px"><b>Self Help Books</font></b></div>
+<div id="right">
+<form>
+  <label class="checkbox-inline">
+    <font style="font-family:Arial; font-size:20px"><b>Sort By :</b></font>
+    <input type="checkbox" value="">Featured
+  </label>
+  <label class="checkbox-inline">
+   <input type="checkbox" value="">Low to High
+  </label>
+  <label class="checkbox-inline">
+    <input type="checkbox" value="">High to Low
+  </label>
+</form>
+</div>
+<br><br>
+<hr>
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+   <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="make-your-own-luck.jpeg" alt="Jane" style="width:365px;height:300px;"  >
+
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <tr>
+          <td>Language :</td><td>English</td>
+        </tr> 
+        <tr>
+         <td>Binding :</td><td>Paperback</td>
+        </tr> 
+        <tr>
+         <td>Publisher :</td><td>Fingerprint Publishing</td>
+        </tr> 
+        <tr>
+         <td>Genre :</td><td>Juvenile Fiction</td>
+           </tr>
+         
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Make Your Own Luck  (English, Paperback, Khan Rehan Yar)</p>
+          <div class="product-carousel-price">
+          <ins>₹199</ins> <del>₹250</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>  
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="think-like-a-monk.jpeg" alt="Jane" style="width:365px;height:300px;">
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  <tr>
+    <td>Language :</td><td>English</td>
+  </tr> 
+  <tr>
+   <td>Binding :</td><td>Paperback</td>
+  </tr> 
+  <tr>
+   <td>Publisher :</td><td>Thorsons</td>
+  </tr> 
+  <tr>
+   <td>Genre :</td><td>Self-Help book</td>
+     </tr>
+          
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Think Like a Monk  (English, Paperback, Jay Shetty)</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹325</ins> <del>₹499</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="death.jpeg" alt="Mike" style="width:350px;height:200px;" >
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+<table class="Details" width=100%> 
+  
+  <tr>
+    <td>Language :</td><td>English</td>
+  </tr> 
+  <tr>
+   <td>Binding :</td><td>Paperback</td>
+  </tr> 
+  <tr>
+   <td>Publisher :</td><td> Penguin Random House India</td>
+  </tr> 
+  <tr>
+   <td>Genre :</td><td>Self-Help book</td>
+     </tr>
+
+</table>
+    
+    </div>
+  </div>
+</div>
+      <div class="container">
+     
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>Death; An Inside Story  (English, Paperback, Sadhguru)</p>
+        
+        <div class="product-carousel-price">
+          <ins>₹246</ins> <del>₹299</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="column">
+    <div class="card">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+
+      <img src="how-to-talk.jpeg" alt="John" style="width:365px;height:300px;" >
+  
+    </div>
+    <div class="flip-box-back">
+
+<h2>Specification</h2>
+      <table class="Details" width=100%> 
+        <table class="Details" width=100%> 
+          <tr>
+            <td>Language :</td><td>English</td>
+          </tr> 
+          <tr>
+           <td>Binding :</td><td>Paperback</td>
+          </tr> 
+          <tr>
+           <td>Publisher :</td><td>  Harper</td>
+          </tr> 
+          <tr>
+           <td>Genre :</td><td>Self-Help book</td>
+             </tr>
+    </table>
+    </div>
+  </div>
+</div>
+      <div class="container">
+        <button class="button1 pull-right">5<i class="fa fa-star"></i></button>
+        <p>HOW TO TALK TO ANYONE  (English, Paperback, Leil Lowndes)</p>
+       
+        <div class="product-carousel-price">
+          <ins>₹237</ins> <del>₹299</del></div>
+          <table width="100%">
+            <tr>
+        <td><p><button class="button"><i class="fa fa-shopping-cart"></i>Add to cart</button></p></td>
+        <td><p><button class="button"><i class="fa fa-gift"></i>Buy Now</button></p></td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-----end of self help -->
+
+<br>
+<hr>
+
+
+<footer>
+  <div class="container2 wrap">
+    <div class="row1">
+      <div class="column1">
+        <div class="footer-widget about-widget">
+          <h2 class="widget-title">About</h2>
+            <p>Started by<br>> Mayank Gindodiya<br>> Uzair Shaikh<br>> Neha Baisane<br>> Sakshi Joshi </p>
+            <div class="cards">
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-discover"></i>
+            </div>
+            <p><span><i class="fas fa-lock"></i></span>Secure Online Payment</p>
+        </div>
+      </div>
+
+      
+      <div class="column1">
+        <div class="footer-widget information-widget">
+        <h2 class="widget-title">Information</h2>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">Policy</a></li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="footer-widget">
+          <h2 class="widget-title">Contact</h2>
+            <div class="contact-address">
+              <i class="fas fa-map-marker-alt"></i> Address : XYZ, Mumbai, India. Pin-Code:400001
+            </div>
+        
+            <div class="contact-number">
+              <i class="fas fa-phone-square-alt"></i> Phone : +91 123456789
+            </div>
+
+            <div class="contact-email">
+              <i class="fas fa-envelope"></i> Email : contact@acecart.com
+            </div>
+
+            <div class="social-widget">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div> 
+    </div>
+  </div> 
+  <div class="copyright">
+    <div clas="container2">
+      <p>Copyright © 2020 All rights reserved | Design by Team AceCart</p>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+

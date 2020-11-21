@@ -1,0 +1,924 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web\css\all.min.css">
+<title>E-commerce</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<style>
+  .buttonc {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color:white;
+  border: none;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.buttonc:hover {
+  background-color:#F0F0F0;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    .zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+.button2 {
+  background-color: white;
+  color: black;
+  
+  width: 120px;height: 35px; border-radius: 8px ; 
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+/*footer*/
+
+footer
+{
+  background-color: #282828;
+  color: #aba8a8;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.footer-widget
+{
+  margin: 0 10px;
+  text-align: justify;
+}
+.container2
+{
+  width: 100%;
+  /*widows: 100%;
+  margin: 0px auto;*/
+}
+.wrap
+{
+  display: table;
+  box-sizing: border-box;
+}
+.row
+{ background-color: #282828;
+  width:100%;
+}
+.column
+{
+ width:25%;
+ display:table-cell;
+
+ /*text-align: center;*/
+}
+.widget-title
+{
+  color: #fff;
+  margin-bottom:30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.about-widget p
+{
+  line-height: 20px;
+  margin: 15px;
+}
+.card i
+{
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 12px;
+}
+.about-widget p span
+{
+  margin-right: 10px;
+}
+.categories-widget,.information-widget
+{
+ 
+  margin: 10px 0;
+}
+.footer-widget ul
+{
+  margin-left: 5px;
+}
+.footer-widget ul li
+{
+  padding-bottom: 10px;
+}
+.footer-widget ul li a
+{
+  color: #aba8a8;
+  text-decoration: none;
+}
+.footer-widget ul li a:hover
+{
+  color: #d2d2d2;
+  margin-left: 10px;
+  transition: all .5s ease;
+}
+.contact-address
+{
+ /* background-color: #282828;
+  color: #aba8a8;*/
+  padding-bottom: 20px;
+  border-bottom: 1px solid #9a98988c;
+  line-height: 20px;
+}
+.contact-number, .contact-email
+{
+  margin: 10px 0;
+}
+.contact-address i, .contact-number i, .contact-email i
+{
+  margin-right: 10px;
+}
+.social-widget a
+{
+  display: inline-block;
+  font-size: 28px;
+  color: #aba8a8;
+  margin-right: 10px;
+}
+.social-widget a:hover
+{
+  color: #d2d2d2;
+  transition: all .4s ease;
+}
+.copyright
+{
+  background-color: #000;
+  padding: 20px;
+  width:100%;
+}
+.copyright p
+{
+  color: #d2d2d2;
+  text-align: center;
+}
+.main-products
+{
+  width: 100%;
+  background-color:yellow;
+  overflow: hidden;
+  display:flex;
+  flex-wrap: wrap;
+}
+.item
+{
+  margin: 0 auto;
+  text-align:center;
+  position: relative;
+  top: 30px;
+}
+.item a
+{
+  text-decoration: none;
+  color: #000;
+}
+.item img
+{
+  width: 350px;
+}
+.item h1
+{
+  background-color: rgba(253,253,253,0.90);
+  font-size: 24px;
+  line-height: 3;
+  text-transform: uppercase;
+  position: relative;
+  top: -100px;
+}
+.container1 
+{
+ 
+  widows: 100%;
+  margin: 0px auto;
+}
+.child-products
+{
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 25px;
+}
+.sub-item
+{
+  margin: 0 auto;
+}
+.sub-item a{
+  text-decoration: none;
+  color: #000;
+
+}
+.sub-item img
+{
+  width:260px;
+}
+.overlay
+{
+  background-color: rgba(253,253,253,0.80);
+  text-align: center;
+  line-height: 1.5;
+  position: relative;
+  top: -100px;
+}
+.title
+{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.seperator
+{
+  margin: 0 auto;
+  width: 50px;
+  height: 2px;
+  background-color: #ffc107;
+
+}
+.count{
+color:#7e7c82;
+}
+.features-section{
+  width: 100%;
+  padding: 100px 0px;
+
+}
+.features-inner{
+  display:flex;
+  padding: 40px 0px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1)
+}
+
+
+.features-box{
+  flex:0 0 25%;
+  max-width:25%;
+  text-align: center;
+  border-right: 1px solid #9e9e9e;
+}
+.features-box:nth-child(4){
+ border-right:none;
+}
+.icon{
+  margin-bottom:10px;
+}
+
+.icon img{
+  width: 50px;
+  height: 50px;
+
+}
+.features box h1{
+font-size:16px;
+margin-bottom:5px;
+}
+
+.features box p{
+  color: #9e9e9e;
+}
+    
+</head>
+</style>
+<body bgcolor=white>
+<table border="0" width="100%" bgcolor="#000000" >
+    <tr>
+        <td align="right"><img src="logo.png" style="width:120px;height:70px;"></td>
+        <td><input type="text" placeholder="  Search for products, brand and more" name="search" style="width:550px;height:35px; border-radius: 10px;">
+            <input type="button" value="Search" class="button2">
+        </td>
+        <th ><input type="button" value="Login" class="button2"></th>
+        <td><input type="button" value="Cart" class="button2"></td>
+    </tr>
+</table>
+
+<table border="0" width="100%" height="8%" bgcolor="white" >
+  <th width="12.5%">
+    <a href=mobile.html><button class="buttonc" "><span>Electronics</span></button></a>
+</th>
+<th width="12.5%">
+    <a href=Appliances.html> <button class="buttonc"><span>Appliances</span></button></a>
+</th>
+<th  width="12.5%">
+    <a href=Men.html></p><button class="buttonc"><span>Men</span></button></a>
+ </th>
+<th width="12.5%">
+    <a href=Women.html> <button class="buttonc"><span>Women</span></button></a>
+</th>
+<th width="12.5%">
+    <a href=Kids.html> <button class="buttonc"><span>Kids</span></button></a>
+</th>
+<th width="12.5%">
+    <a href='Home & Furniture.html'> <button class="buttonc"><span>Home & Furniture</span></button></a>   
+</th>
+<th width="12.5%">
+    <a href=Books.html> <button class="buttonc"><span>Books</span></button></a>    
+</th>
+<th width="12.5%">
+    <a href=Health.html><button class="buttonc"><span>Health</span></button></a>
+</th>  
+    </tr>
+</table>
+
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="banner1.png" style="width:100% ; height:70%;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Banner2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="banner3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="banner3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+
+
+    <div class="features-section">
+      <div class="container1">
+        <div class="features-inner">
+    
+          <div class="features-box">
+            <div class="icon">
+              <img src="free delivery.png">
+            </div>
+            <h1>Free Delivery</h1>
+           <p>Free shipping on all orders.</p>
+          </div>
+    
+          <div class="features-box">
+            <div class="icon">
+              <img src="return policy.png">
+            </div>
+            <h1>Return Policy</h1>
+           <p>7 days return policy.</p>
+          </div>
+    
+          <div class="features-box">
+            <div class="icon">
+              <img src="24 7support.jpg">
+            </div>
+            <h1>24/7 Support</h1>
+           <p>24/7 customer service available.</p>
+          </div>
+    
+          <div class="features-box">
+            <div class="icon">
+              <img src="secure pay.jpg">
+            </div>
+            <h1>Secure Payment</h1>
+           <p>Payment security is issued.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<br>
+    <h2>Best Deals of the Day<input type="button" value="View All" class="button2" style="position: absolute;
+      right: 10px; padding:  0;"></h2> <hr>
+      <br>
+    <div class="products">
+      <div class="container1">
+<div class="child-products">
+  <div class="sub-item">
+    <a href="#">
+      <img src="ACER A515-51G.jpg" alt="Business laptops">
+      <div class="overlay">
+        <h1 class="title">Business laptops</h1>
+        <div class="seperator"></div>
+        <div class="count">Upto 30% Off</div>
+      </div>
+    </a>
+  </div>
+  <div class="sub-item">
+    <a href="#">
+      <img src="Canon EOS C70.jpg" alt="Popular Cameras">
+      <div class="overlay">
+        <h1 class="title">Popular Cameras</h1>
+        <div class="seperator"></div>
+        <div class="count">From RS.50,995/-</div>
+      </div>
+    </a>
+  </div>
+  <div class="sub-item">
+    <a href="#">
+      <img src="Xiaomi Mi Watch Revolve.png" alt="Smart Watches">
+      <div class="overlay">
+        <h1 class="title">Smart Watches</h1>
+        <div class="seperator"></div>
+        <div class="count">From RS.4,999/-</div>
+      </div>
+    </a>
+  </div>
+  <div class="sub-item">
+    <a href="#">
+      <img src="One plus 8 t.jpg" alt="shirts">
+      <div class="overlay">
+        <h1 class="title">Top Smart Phones</h1>
+        <div class="seperator"></div>
+        <div class="count">5 Item</div>
+      </div>
+    </a>
+  </div>
+
+</div>
+</div>
+    </div>
+    <!--
+<div class="products">
+  <div class="container1">
+    <div class="item">
+      <a href="#">
+        <img src="Samsung galaxy note 20 ultra.jpg" alt="Dresses">
+        <h1>Dresses</h1>
+      </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <img src="Samsung galaxy note 20 ultra.jpg" alt="Dresses">
+        <h1>Bags</h1>
+      </a>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+<!--<table border="0" width="100%" height="8%" bgcolor="white">
+    <tr>
+        <td colspan="5"><h2>Best Deals on Electronics<input type="button" value="View All" class="button" style="position: absolute;
+          right: 10px; padding:  0;"></h2> <hr>
+          
+        </td>
+    </tr>
+    <tr>
+        <th><img src="schoolbag1.jpg" width="75%" class="zoom"></th>
+        <th><img src="schoolbag1.jpg" width="75%" class="zoom"></th>
+        <th><img src="schoolbag1.jpg" width="75%" class="zoom"></th>
+        <th><img src="schoolbag1.jpg" width="75%" class="zoom"></th>
+        <th><img src="schoolbag1.jpg" width="75%" class="zoom"></th>
+    </tr>
+    <br>
+    <tr></tr>
+    <br><br>
+    <tr>
+      <th style="font-size:12px"><font color="black">Business laptops</font></th>
+        <th style="font-size:12px"><font color="black">Top 20 Mobiles</font></th>
+        <th style="font-size:12px"><font color="black">128 GB Pendrives</font></th>
+        <th style="font-size:12px"><font color="black">Tv Straming Devices</font></th>
+        <th style="font-size:12px"><font color="black">Sound Bars</font></th>
+      </tr>
+      <br><br>
+    <tr>
+    <th style="font-size:10px"><font color="grey">Avail GST Benefits</font></th>
+      <th style="font-size:10px"><font color="grey">Apple, MI, Lenovo & more</font></th>
+      <th style="font-size:10px"><font color="grey">SanDisk, Kingston & more</font></th>
+      <th style="font-size:10px"><font color="grey">MarQ, Airtel & more</font></th>
+      <th style="font-size:10px"><font color="grey">Bring Theatre Home</font></th>
+    </tr>
+    <br><br>
+    <tr>
+        <th><font color="green">Upto 30% Off</font></th>
+        <th><font color="green">From RS.50,995/- </font></th>
+        <th><font color="green">From RS.1,199/- </font></th>
+        <th><font color="green">From RS.2,799/- </font></th>
+        <th><font color="green">From RS.3,999/- </font></th>
+    </tr>
+</table>-->
+<br>
+<hr>
+<br>
+
+<div style="position: relative;
+text-align: center;
+color: white;">
+<a href="Women.html">
+<img src="womenban1.png" style="width:100%;filter: blur(1%);
+-webkit-filter: blur(8px);">
+</a>
+<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); font-size: 29px;font-style: italic;"
+font-family:'Comic Sans MS'""><font color=black>
+  <h1><b>Fashion</b></h1>Discover Best Deals On Fashion<br><br>
+  <a href="Women.html" style="padding: 10px 30px;background-color: rgba(0,0,0,0.3);border: 2px solid #fff;
+  font-size: 18px;font-weight: 600;font-style: italic;color: #fff; border-radius: 20px;text-decoration: none;">Discover</a>
+  </font></div>
+</div >
+<br><hr>
+<table border="0" width="100%" height="8%" bgcolor="white">
+    <tr>
+      <td colspan="5"><h2>Top Selection<input type="button" value="View All" class="button2" style="position: absolute;
+        right: 10px; padding:  0;"></h2> <hr>
+    </tr>
+    <tr>
+      <th><img src="DELL INSPIRON 15 7570.jpg" width="75%" height="30%" class="zoom"></th>
+      <th><img src="Iphone 12 PRO.jpg" width="65%" height="25%" class="zoom"></th>
+      <th><img src="pendrives.jpg" width="65%" height="20%" class="zoom"></th>
+      <th><img src="tv.jpg" width="75%" height="38%" class="zoom"></th>
+      <th><img src="musicsystem.png" width="75%"  height="40%" class="zoom"></th>
+  </tr>
+  <br>
+  <tr></tr>
+  <br><br>
+  <tr>
+    <th style="font-size:12px"><font color="black">Business laptops</font></th>
+      <th style="font-size:12px"><font color="black">Top 20 Mobiles</font></th>
+      <th style="font-size:12px"><font color="black">128 GB Pendrives</font></th>
+      <th style="font-size:12px"><font color="black">Tv Straming Devices</font></th>
+      <th style="font-size:12px"><font color="black">Sound Bars</font></th>
+    </tr>
+    <br><br>
+  <tr>
+  <th style="font-size:10px"><font color="grey">Avail GST Benefits</font></th>
+    <th style="font-size:10px"><font color="grey">Apple, MI, Lenovo & more</font></th>
+    <th style="font-size:10px"><font color="grey">SanDisk, Kingston & more</font></th>
+    <th style="font-size:10px"><font color="grey">MarQ, Airtel & more</font></th>
+    <th style="font-size:10px"><font color="grey">Bring Theatre Home</font></th>
+  </tr>
+  <br><br>
+  <tr>
+      <th><font color="green">Upto 30% Off</font></th>
+      <th><font color="green">Upto 25% Off</font></th>
+      <th><font color="green">From RS.599/- </font></th>
+      <th><font color="green">Upto 35% Off</font></th>
+      <th><font color="green">From RS.5,999/- </font></th>
+  </tr>
+</table>
+<br><hr><br>
+<div style="position: relative;
+text-align: center;
+color: white;">
+<a href= "Home and furniture.html">
+<img src="home firni banner.png" style="width:100%;filter: blur(1%);
+-webkit-filter: blur(8px);">
+</a>
+<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); font-size: 29px;font-style: italic;"
+font-family:'Comic Sans MS'""><font color=black>
+  <h1><b>Furniture</b></h1>Create Your Own Space With AceCart Furniture<br><br>
+  <a href="Home and furniture.html" style="padding: 10px 30px;background-color: rgba(0,0,0,0.3);border: 2px solid #fff;
+  font-size: 18px;font-weight: 600;font-style: italic;color: #fff; border-radius: 20px;text-decoration: none;">Discover</a>
+  </font></div>
+</div >
+<br><hr>
+<table border="0" width="100%" height="8%" bgcolor="white">
+    <tr>
+      <td colspan="5"><h2>Best Picks For You<input type="button" value="View All" class="button2" style="position: absolute;
+        right: 10px; padding:  0;"></h2> <hr>
+    </tr>
+    <tr>
+      <th><img src="bag school.jpeg" width="70%" height="25%" class="zoom"></th>
+      <th><img src="shoes.jpeg" width="75%" height="35%" class="zoom"></th>
+      <th><img src="jbl.jpeg" width="75%" height="35%" class="zoom"></th>
+      <th><img src="Sandwitchmaker.jpeg" width="75%" height="35%" class="zoom"></th>
+      <th><img src="mask.jpg" width="75%" height="35%" class="zoom"></th>
+  </tr>
+  <br>
+  <tr></tr>
+  <br><br>
+  <tr>
+    <th style="font-size:12px"><font color="black">School Bags</font></th>
+      <th style="font-size:12px"><font color="black">Shoes</font></th>
+      <th style="font-size:12px"><font color="black">Bluetooth Speakers</font></th>
+      <th style="font-size:12px"><font color="black">Electronics appliances</font></th>
+      <th style="font-size:12px"><font color="black">Masks & hand sanitizers</font></th>
+    </tr>
+    <br><br>
+  <tr>
+  <th style="font-size:10px"><font color="grey">Fancy & Trendy Bags</font></th>
+    <th style="font-size:10px"><font color="grey">Shoes, sandals & more</font></th>
+    <th style="font-size:10px"><font color="grey">JBL, Boat & more</font></th>
+    <th style="font-size:10px"><font color="grey">Bajaj, Philips & more</font></th>
+    <th style="font-size:10px"><font color="grey">Dettol, Sanitron etc</font></th>
+  </tr>
+  <br><br>
+  <tr>
+      <th><font color="green">Upto 30% Off</font></th>
+      <th><font color="green">From RS.499/- </font></th>
+      <th><font color="green">From RS.1,199/- </font></th>
+      <th><font color="green">From RS.2,799/- </font></th>
+      <th><font color="green">Upto 30% Off </font></th>
+  </tr>
+</table>
+<br><hr><br>
+<div style="position: relative;
+text-align: center;
+color: white;">
+<a href="Books.html">
+<img src="bookban1.png" style="width:100%;filter: blur(1%);-webkit-filter: blur(8px);">
+</a>
+<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); font-size: 29px;font-style: italic;"
+font-family:'Comic Sans MS'""><font color=black>
+  <h1><b>Books</b></h1>Discover New Things In Every Page<br><br>
+  <a href="Books.html" style="padding: 10px 30px;background-color: rgba(0,0,0,0.3);border: 2px solid #fff;
+  font-size: 18px;font-weight: 600;font-style: italic;color: #fff; border-radius: 20px;text-decoration: none;">Discover</a>
+  </font></div>
+</div >
+<br><hr>
+<table border="0" width="100%" height="8%" bgcolor="white">
+    <tr>
+      <td colspan="5"><h2>Baby & Kids <input type="button" value="View All" class="button2" 
+      style="position: absolute;
+        right: 10px; padding:  0;"></h2> <hr>
+    </tr>
+    <tr>
+      <th><img src="lunch box.jpeg" width="75%" height="30%" class="zoom"></th>
+      <th><img src="baby cloth.jpeg" width="40%" height="20%" class="zoom"></th>
+      <th><img src="teddy.jpeg" width="65%" height="55%" class="zoom"></th>
+      <th><img src="baby gift.jpeg" width="70%" height="35%" class="zoom"></th>
+      <th><img src="socks.jpeg" width="50%" height="25%" class="zoom"></th>
+  </tr>
+  <br>
+  <tr></tr>
+  <br><br>
+  <tr>
+    <th style="font-size:12px"><font color="black">Lunch Box</font></th>
+      <th style="font-size:12px"><font color="black">Top 20 Mobiles</font></th>
+      <th style="font-size:12px"><font color="black">Toys</font></th>
+      <th style="font-size:12px"><font color="black">Baby grooming</font></th>
+      <th style="font-size:12px"><font color="black">Winter Ware</font></th>
+    </tr>
+    <br><br>
+  <tr>
+  <th style="font-size:10px"><font color="grey">Water bottle, tiffin & more</font></th>
+    <th style="font-size:10px"><font color="grey">Party Wear & more</font></th>
+    <th style="font-size:10px"><font color="grey">Teddy, barbie set & more</font></th>
+    <th style="font-size:10px"><font color="grey">Baby Gift Set & Combo</font></th>
+    <th style="font-size:10px"><font color="grey">Kids Clothing</font></th>
+  </tr>
+  <br><br>
+  <tr>
+      <th><font color="green">Upto 30% Off</font></th>
+      <th><font color="green">Upto 35% Off</font></th>
+      <th><font color="green">Upto 45% Off </font></th>
+      <th><font color="green">Upto 30% Off</font></th>
+      <th><font color="green">Upto 50% Off</font></th>
+  </tr>
+</table>
+<br>
+
+<br>
+    <h2>Best Deals on Electronics<input type="button" value="View All" class="button2" style="position: absolute;
+      right: 10px; padding:  0;"></h2> <hr>
+      <br>
+    <div class="products">
+      <div class="container1">
+<div class="child-products">
+  <div class="sub-item">
+    <a href="#">
+      <img src="headphones.jpeg" alt="Headphones">
+      <div class="overlay">
+        <h1 class="title">Headphones</h1>
+        <div class="seperator"></div>
+        <div class="count">5 Item</div>
+      </div>
+    </a>
+  </div>
+  <div class="sub-item">
+    <a href="#">
+      <img src="Canon EOS C70.jpg" alt="Camera">
+      <div class="overlay">
+        <h1 class="title">Camera</h1>
+        <div class="seperator"></div>
+        <div class="count">5 Item</div>
+      </div>
+    </a>
+  </div>
+  <div class="sub-item">
+    <a href="#">
+      <img src="smartwatch.jpg" alt="Smart Watches">
+      <div class="overlay">
+        <h1 class="title">Smart Watches</h1>
+        <div class="seperator"></div>
+        <div class="count">5 Item</div>
+      </div>
+    </a>
+  </div>
+  <div class="sub-item">
+    <a href="#">
+      <img src="powerbank.jpg" alt="Power Banks">
+      <div class="overlay">
+        <h1 class="title">Power Banks</h1>
+        <div class="seperator"></div>
+        <div class="count">5 Item</div>
+      </div>
+    </a>
+  </div>
+
+</div>
+</div>
+    </div>
+
+<footer>
+  <div class="container2 wrap">
+    <div class="row">
+      <div class="column">
+        <div class="footer-widget about-widget">
+          <h2 class="widget-title">About</h2>
+            <p>Started by<br>> Mayank Gindodiya<br>> Uzair Shaikh<br>> Neha Baisane<br>> Sakshi Joshi </p>
+            <div class="card">
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-paypal"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-discover"></i>
+            </div>
+            <p><span><i class="fas fa-lock"></i></span>Secure Online Payment</p>
+        </div>
+      </div>
+
+      
+      <div class="column">
+        <div class="footer-widget information-widget">
+        <h2 class="widget-title">Information</h2>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">Policy</a></li>
+        </ul>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="footer-widget">
+          <h2 class="widget-title">Contact</h2>
+            <div class="contact-address">
+              <i class="fas fa-map-marker-alt"></i> Address : XYZ, Mumbai, India. Pin-Code:400001
+            </div>
+        
+            <div class="contact-number">
+              <i class="fas fa-phone-square-alt"></i> Phone : +91 123456789
+            </div>
+
+            <div class="contact-email">
+              <i class="fas fa-envelope"></i> Email : contact@acecart.com
+            </div>
+
+            <div class="social-widget">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div> 
+    </div>
+  </div> 
+  <div class="copyright">
+    <div clas="container2">
+      <p>Copyright © 2020 All rights reserved | Design by Team AceCart</p>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
